@@ -14,12 +14,14 @@ function genCharacter()
 {
     playerName = names.First[Math.floor(Math.random() * names.First.length)];
     Player.Name = playerName;
+    Player.HP = 100;
 }
 
 function genEnemy()
 {
     enemyName = names.First[Math.floor(Math.random() * names.First.length)];
     Enemy.Name = enemyName;
+    Enemy.HP = 100;
 }
 
 module.exports = 
